@@ -14,3 +14,11 @@ inserir no pom.xml do projeto
         </snapshots>
     </repository>
 </repositories>
+
+  <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>javainterfaces</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>

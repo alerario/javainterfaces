@@ -1,0 +1,1 @@
+/Users/alexandrelerario/Downloads/netbeans/java/maven/bin/mvn install:install-file -Dfile=../Projeto/jilib/dist/jilib.jar -DgroupId=alerario -DartifactId=javainterfaces -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true -DlocalRepositoryPath=.  -DcreateChecksum=true

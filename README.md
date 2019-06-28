@@ -8,3 +8,5 @@
             <scope>provided</scope>
            
         </dependency>
+
+https://raw.githubusercontent.com/alerario/javainterfaces/master/Projeto/jilib/dist/jilib.jar

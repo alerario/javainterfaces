@@ -1,12 +1,28 @@
-    mvn install:install-file -Dfile=jilib.jar -DgroupId=utfpr -DartifactId=javainterfaces -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+    Para gerar o repositorio local 
+    mvn install:install-file -Dfile=../Projeto/jilib/dist/jilib.jar -DgroupId=alerario -DartifactId=javainterfaces -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true -DlocalRepositoryPath=. -DcreateChecksum=true
+    
+    Após efetuar o push, o pom.xml deve incluir:
 
+   <repositories>
+    <repository>
+        <id>alerario-repo</id>
+        <url>https:///raw.githubusercontent.com/alerario/javainterfaces/master/repositorio</url>
+    </repository>
+</repositories>
+
+e nas dependencias:
+
+<dependency>
+      <groupId>alerario</groupId>
+      <artifactId>javainterfaces</artifactId>
+      <version>1.0</version>           
+ </dependency>
    
-   <dependency>
-            <groupId>utfpr</groupId>
-            <artifactId>javainterfaces</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-           
-        </dependency>
-
+   
+   
+   
+   
+   
+   
+   
 https://raw.githubusercontent.com/alerario/javainterfaces/master/Projeto/jilib/dist/jilib.jar
